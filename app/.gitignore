@@ -1,0 +1,12 @@
+/build
+# Archivos de Android Studio
+.idea/
+*.iml
+
+# Directorios de build
+/build/
+*/build/
+
+# Archivos de gradle
+.gradle/
+*.log
