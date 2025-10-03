@@ -12,20 +12,24 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.achowa_3.ui.theme.Achowa_3Theme
+import com.example.achowa_3.ui.theme.MainActivity
+import com.example.achowa_3.ui.theme.Message
+import com.example.achowa_3.ui.theme.MessageCard
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             Achowa_3Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+
+
+                    MessageCard(msg = Message("hola", "aaaaaaaaaa"))
+
+
             }
+
         }
     }
 }
